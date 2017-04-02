@@ -38,6 +38,7 @@ Route::get('work/{Like}', function($like){
 	}
 })->name('addLike');
 
+
 Route::post('work/add_new_marker/{Marker}', function($reservs){
 	$add_reserv = \App\Reserv::where('id', $reservs)->first();
 	$new_marker = new \App\Marker;
